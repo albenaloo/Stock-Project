@@ -14,6 +14,12 @@ public class FilterSearchPresenter implements FilterSearchOutputBoundary {
     private final FilterSearchViewModel filterSearchViewModel;
     private final ViewManagerModel viewManagerModel;
 
+    public FilterSearchPresenter(ViewManagerModel viewManagerModel,
+                                   FilterSearchViewModel filterSearchViewModel) {
+        this.viewManagerModel = viewManagerModel;
+        this.filterSearchViewModel = filterSearchViewModel;
+    }
+
     @Override
     public void prepareSuccessView(FilterSearchOutputData response) {
         // On success, update the filterSearchViewModel's state
