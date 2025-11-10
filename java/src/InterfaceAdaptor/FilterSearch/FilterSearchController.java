@@ -13,3 +13,4 @@ public class FilterSearchController {
     public FilterSearchController(FilterSearchInputBoundary FilterSearchUseCaseInteractor) {
         this.FilterSearchUseCaseInteractor = FilterSearchUseCaseInteractor;
     }
+}

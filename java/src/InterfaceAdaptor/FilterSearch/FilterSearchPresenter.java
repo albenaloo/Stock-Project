@@ -1,15 +1,16 @@
 package InterfaceAdaptor.FilterSearch;
 
-import InterfaceAdapter.ViewModel;
+import InterfaceAdapter.ViewManagerModel;
+import InterfaceAdapter.FilterSearch.FilterSearchState;
+import InterfaceAdapter.FilterSearch.FilterSearchViewModel;
+import Usecase.FilterSearch.FilterSearchOutputBoundary;
+import Usecase.FilterSearch.FilterSearchOutputData;
 
 /**
- * The View Model for the Logged In View.
+ * The Presenter for the Login Use Case.
  */
-public class LoggedInViewModel extends ViewModel<LoggedInState> {
 
-    public LoggedInViewModel() {
-        super("logged in");
-        setState(new LoggedInState());
-    }
-
+public class FilterSearchPresenter implements FilterSearchOutputBoundary {
+    private final FilterSearchViewModel FilterSearchViewModel;
+    private final ViewManagerModel viewManagerModel;
 }
