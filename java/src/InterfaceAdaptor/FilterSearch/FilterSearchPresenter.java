@@ -11,6 +11,33 @@ import Usecase.FilterSearch.FilterSearchOutputData;
  */
 
 public class FilterSearchPresenter implements FilterSearchOutputBoundary {
-    private final FilterSearchViewModel FilterSearchViewModel;
+    private final FilterSearchViewModel filterSearchViewModel;
     private final ViewManagerModel viewManagerModel;
+
+    @Override
+    public void prepareSuccessView(FilterSearchOutputData response) {
+        // On success, update the filterSearchViewModel's state
+        final FilterSearchState filterSearchState = filterSearchViewModel.getState();
+        filterSearchState.setExchange(response.getExchange());
+        this.filterSearchViewModel.firePropertyChange();
+
+        // and clear everything from the FilterSearchViewModel's state
+        filterSearchViewModel.setState(new FilterSearchState());
+
+        // switch to the logged in view
+        this.viewManagerModel.setState(filterSearchViewModel.getViewName());
+        this.viewManagerModel.firePropertyChange();
+    }
+
+    @Override
+    public void prepareFailView(String error) {
+        final FilterSearchState filterSearchState = filterSearchViewModel.getState();
+        filterSearchState.setFilterSearchError(error);
+        filterSearchViewModel.firePropertyChange();
+    }
+
+    @Override
+    public void switchToMainView() {
+
+    }
 }
