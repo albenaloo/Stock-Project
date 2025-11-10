@@ -1,6 +1,6 @@
 package InterfaceAdaptor.FilterSearch;
 
-import InterfaceAdapter.ViewModel;
+import InterfaceAdaptor.signup.ViewModel;
 
 /**
  * The View Model for the Filter Search View.

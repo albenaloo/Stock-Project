@@ -1,8 +1,8 @@
 package InterfaceAdaptor.FilterSearch;
 
-import InterfaceAdapter.ViewManagerModel;
-import InterfaceAdapter.FilterSearch.FilterSearchState;
-import InterfaceAdapter.FilterSearch.FilterSearchViewModel;
+import InterfaceAdaptor.signup.ViewManagerModel;
+import InterfaceAdaptor.FilterSearch.FilterSearchState;
+import InterfaceAdaptor.FilterSearch.FilterSearchViewModel;
 import Usecase.FilterSearch.FilterSearchOutputBoundary;
 import Usecase.FilterSearch.FilterSearchOutputData;
 
@@ -24,7 +24,7 @@ public class FilterSearchPresenter implements FilterSearchOutputBoundary {
         // and clear everything from the FilterSearchViewModel's state
         filterSearchViewModel.setState(new FilterSearchState());
 
-        // switch to the logged in view
+        // switch to the filter search view
         this.viewManagerModel.setState(filterSearchViewModel.getViewName());
         this.viewManagerModel.firePropertyChange();
     }
