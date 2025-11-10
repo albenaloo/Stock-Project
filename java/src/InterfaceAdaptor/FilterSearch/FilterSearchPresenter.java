@@ -18,7 +18,6 @@ public class FilterSearchPresenter implements FilterSearchOutputBoundary {
     public void prepareSuccessView(FilterSearchOutputData response) {
         // On success, update the filterSearchViewModel's state
         final FilterSearchState filterSearchState = filterSearchViewModel.getState();
-        filterSearchState.setExchange(response.getExchange());
         this.filterSearchViewModel.firePropertyChange();
 
         // and clear everything from the FilterSearchViewModel's state
