@@ -1,10 +1,10 @@
-package interface_adapter.FilterSearch;
+package InterfaceAdaptor.FilterSearch;
 
 import use_case.FilterSearch.FilterSearchInputBoundary;
 import use_case.FilterSearch.FilterSearchInputData;
 
 
-#The controller for the Filter Search Use Case
+//The controller for the Filter Search Use Case
 
 public class FilterSearchController {
 
