@@ -1,4 +1,8 @@
 package Usecase.News;
 
-public class NewsInputBoundary {
+
+public interface NewsInputBoundary {
+    void executeMarketNews(NewsRequestModel requestModel);
+
+    void executeCompanyNews(NewsRequestModel requestModel);
 }
