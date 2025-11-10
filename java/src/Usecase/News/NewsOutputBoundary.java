@@ -1,4 +1,7 @@
 package Usecase.News;
 
-public class NewsOutputBoundary {
+public interface NewsOutputBoundary {
+    void prepareSuccessView(NewsResponseModel responseModel);
+
+    void prepareFailView(String errorMessage);
 }
