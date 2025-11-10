@@ -8,7 +8,7 @@ import use_case.FilterSearch.FilterSearchInputData;
 
 public class FilterSearchController {
 
-    private final FilterSearchBoundary FilterSearchUseCaseInteractor;
+    private final FilterSearchInputBoundary FilterSearchUseCaseInteractor;
 
     public FilterSearchController(FilterSearchInputBoundary FilterSearchUseCaseInteractor) {
         this.FilterSearchUseCaseInteractor = FilterSearchUseCaseInteractor;
