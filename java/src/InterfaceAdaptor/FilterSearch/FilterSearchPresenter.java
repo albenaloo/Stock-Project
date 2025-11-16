@@ -1,8 +1,6 @@
 package InterfaceAdaptor.FilterSearch;
 
-import InterfaceAdaptor.signup.ViewManagerModel;
-import InterfaceAdaptor.FilterSearch.FilterSearchState;
-import InterfaceAdaptor.FilterSearch.FilterSearchViewModel;
+import InterfaceAdaptor.ViewManagerModel;
 import Usecase.FilterSearch.FilterSearchOutputBoundary;
 import Usecase.FilterSearch.FilterSearchOutputData;
 
