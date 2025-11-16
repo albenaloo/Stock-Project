@@ -1,4 +1,4 @@
-package InterfaceAdaptor.signup;
+package InterfaceAdaptor;
 
 /**
  * Model for the View Manager. Its state is the name of the View which
