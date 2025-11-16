@@ -1,6 +1,6 @@
 package InterfaceAdaptor.logged_in;
 
-import InterfaceAdapter.ViewModel;
+import InterfaceAdaptor.ViewModel;
 
 /**
  * The View Model for the Logged In View.
