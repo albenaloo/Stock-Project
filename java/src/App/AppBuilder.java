@@ -1,6 +1,6 @@
 package App;
 
-import DataAccess.FileUserDataAcessObject;
+import DataAccess.FileUserDataAccessObject;
 import Entity.UserFactory;
 import InterfaceAdapter.ViewManagerModel;
 import InterfaceAdapter.logged_in.ChangePasswordController;
