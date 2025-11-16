@@ -19,7 +19,7 @@ import Usecase.change_password.ChangePasswordInteractor;
 import Usecase.change_password.ChangePasswordOutputBoundary;
 import Usecase.login.LoginInputBoundary;
 import Usecase.login.LoginInteractor;
-import Usecase.login.LoginOutpuIBoundary;
+import Usecase.login.LoginOutputBoundary;
 import Usecase.logout.LogoutInputBoundary;
 import Usecase.logout.LogoutInteractor;
 import Usecase.logout.LogoutOutputBoundary;
