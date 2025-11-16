@@ -1,4 +1,4 @@
-package InterfaceAdaptor.signup;
+package InterfaceAdaptor;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
