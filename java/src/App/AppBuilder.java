@@ -33,3 +33,11 @@ import View.ViewManager;
 
 import javax.swing.*;
 import java.awt.*;
+
+public class AppBuilder {
+    private final JPanel cardPanel = new JPanel();
+    private final CardLayout cardLayout = new CardLayout();
+    final UserFactory userFactory = new UserFactory();
+    final ViewManagerModel viewManagerModel = new ViewManagerModel();
+    ViewManager viewManager = new ViewManager(cardPanel, cardLayout, viewManagerModel);
+}
