@@ -4,7 +4,8 @@ import Entity.NewsArticle;
 import java.util.List;
 
 /**
- * Store what the NewsView should currently display
+ * Store what the NewsView should currently displaying
+ * Or show error msg
  */
 public class NewsState {
     private List<NewsArticle> articles;
