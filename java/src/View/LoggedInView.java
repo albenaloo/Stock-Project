@@ -1,9 +1,9 @@
 package View;
 
-import InterfaceAdapter.logged_in.ChangePasswordController;
-import InterfaceAdapter.logged_in.LoggedInState;
-import InterfaceAdapter.logged_in.LoggedInViewModel;
-import InterfaceAdapter.logout.LogoutController;
+import InterfaceAdaptor.logged_in.ChangePasswordController;
+import InterfaceAdaptor.logged_in.LoggedInState;
+import InterfaceAdaptor.logged_in.LoggedInViewModel;
+import InterfaceAdaptor.logout.LogoutController;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
