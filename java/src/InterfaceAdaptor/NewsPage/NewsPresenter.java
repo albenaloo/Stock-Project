@@ -16,17 +16,15 @@ public class NewsPresenter implements NewsOutputBoundary{
 
     @Override
     public void prepareSuccessView(NewsResponseModel responseModel) {
-        NewsState state = viewModel.getState();
-        state.setArticles(responseModel.getArticles());
-        state.setErrorMessage(null);
+        viewModel.setArticles(responseModel.getArticles());
+        viewModel.setErrorMessage(null);
         viewModel.firePropertyChanged();
     }
 
     @Override
     public void prepareFailView(String errorMessage) {
-        NewsState state = viewModel.getState();
-        state.setArticles(null);
-        state.setErrorMessage(errorMessage);
+        viewModel.setArticles(null);
+        viewModel.setErrorMessage(errorMessage);
         viewModel.firePropertyChanged();
     }
 }

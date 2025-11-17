@@ -1,7 +1,6 @@
 package View;
 
 import InterfaceAdaptor.NewsPage.NewsController;
-import InterfaceAdaptor.NewsPage.NewsState;
 import InterfaceAdaptor.NewsPage.NewsViewModel;
 import Entity.NewsArticle;
 
@@ -190,9 +189,8 @@ public class NewsView extends JPanel implements PropertyChangeListener {
             return;
         }
 
-        NewsState state = viewModel.getState();
-        updateTable(state.getArticles());
-        updateError(state.getErrorMessage());
+        updateTable(viewModel.getArticles());
+        updateError(viewModel.getErrorMessage());
     }
 
     private java.util.List<NewsArticle> currentArticles;

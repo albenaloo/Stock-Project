@@ -4,7 +4,7 @@ import Entity.NewsArticle;
 import java.util.List;
 
 /**
- * Interface talks to the Finnhub API
+ * Implemented by the DataAccessObject
  */
 public interface NewsDataAccessInterface {
 

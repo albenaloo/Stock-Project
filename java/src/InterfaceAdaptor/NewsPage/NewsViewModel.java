@@ -1,22 +1,46 @@
 package InterfaceAdaptor.NewsPage;
 
+import Entity.NewsArticle;
+
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
+import java.util.List;
 
+/**
+ * The Presenter can update the states, so the View will changer correspondingly
+ */
 public class NewsViewModel {
     private final PropertyChangeSupport support = new PropertyChangeSupport(this);
-    private final NewsState state = new NewsState();
 
-    public NewsState getState() {
-        return state;
-    }
+    // UI state fields (were in NewsState before)
+    private List<NewsArticle> articles;
+    private String errorMessage;
 
+    // listeners
     public void addPropertyChangeListener(PropertyChangeListener listener) {
         support.addPropertyChangeListener(listener);
     }
 
     public void firePropertyChanged() {
-        // property name "state" is arbitrary but consistent
-        support.firePropertyChange("state", null, state);
+        // property name can be anything, keep "state" to avoid changing other code too much
+        support.firePropertyChange("state", null, this);
+    }
+
+    // state getters/setters
+
+    public List<NewsArticle> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<NewsArticle> articles) {
+        this.articles = articles;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 }

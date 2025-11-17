@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Data holder for the presenter to build the View
+ * Created by the Interactor and passed to OutputBoundary
  */
 
 public class NewsResponseModel {
