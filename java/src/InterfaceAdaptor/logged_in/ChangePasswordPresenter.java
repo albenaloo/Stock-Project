@@ -1,6 +1,6 @@
 package InterfaceAdaptor.logged_in;
 
-import InterfaceAdapter.ViewManagerModel;
+import InterfaceAdaptor.ViewManagerModel;
 import Usecase.change_password.ChangePasswordOutputBoundary;
 import Usecase.change_password.ChangePasswordOutputData;
 

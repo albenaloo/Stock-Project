@@ -26,6 +26,7 @@ import Usecase.logout.LogoutOutputBoundary;
 import Usecase.signup.SignupInputBoundary;
 import Usecase.signup.SignupInteractor;
 import Usecase.signup.SignupOutputBoundary;
+import Usecase.signup.SignupUserDataAccessInterface;
 import View.LoggedInView;
 import View.LoginView;
 import View.SignupView;
@@ -79,7 +80,7 @@ public class AppBuilder {
         final SignupOutputBoundary signupOutputBoundary = new SignupPresenter(viewManagerModel,
                 signupViewModel, loginViewModel);
         final SignupInputBoundary userSignupInteractor = new SignupInteractor(
-                userDataAccessObject, signupOutputBoundary, userFactory);
+                (SignupUserDataAccessInterface) userDataAccessObject, signupOutputBoundary, userFactory);
 
         SignupController controller = new SignupController(userSignupInteractor);
         signupView.setSignupController(controller);

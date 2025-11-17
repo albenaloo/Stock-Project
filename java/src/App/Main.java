@@ -15,5 +15,9 @@ public class Main {
                 .addChangePasswordUseCase()
                 .addLogoutUseCase()
                 .build();
+
+        application.pack();
+        application.setLocationRelativeTo(null);
+        application.setVisible(true);
         }
     }
