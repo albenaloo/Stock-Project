@@ -33,39 +33,21 @@ public class NewsArticle {
         this.url = url;
     }
 
-    public long getId() {
-        return id;
-    }
+    public long getId() {return id;}
 
-    public String getCategory() {
-        return category;
-    }
+    public String getCategory() {return category;}
 
-    public long getDatetime() {
-        return datetime;
-    }
+    public long getDatetime() {return datetime;}
 
-    public String getHeadline() {
-        return headline;
-    }
+    public String getHeadline() {return headline;}
 
-    public String getImage() {
-        return image;
-    }
+    public String getImage() {return image;}
 
-    public String getRelated() {
-        return related;
-    }
+    public String getRelated() {return related;}
 
-    public String getSource() {
-        return source;
-    }
+    public String getSource() {return source;}
 
-    public String getSummary() {
-        return summary;
-    }
+    public String getSummary() {return summary;}
 
-    public String getUrl() {
-        return url;
-    }
+    public String getUrl() {return url;}
 }
