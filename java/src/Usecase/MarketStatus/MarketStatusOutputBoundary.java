@@ -1,4 +1,8 @@
 package Usecase.MarketStatus;
 
-public class MarketStatusOutputBoundary {
+public interface MarketStatusOutputBoundary {
+
+    void prepareSuccessView(MarketStatusResponseModel responseModel);
+
+    void prepareFailView(String errorMessage);
 }

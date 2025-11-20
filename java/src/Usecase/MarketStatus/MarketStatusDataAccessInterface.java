@@ -1,4 +1,7 @@
 package Usecase.MarketStatus;
 
-public class MarketStatusDataAccessInterface {
+import Entity.MarketStatus;
+
+public interface MarketStatusDataAccessInterface {
+    MarketStatus loadStatus(String exchange) throws Exception;
 }

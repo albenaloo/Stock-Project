@@ -1,4 +1,5 @@
 package Usecase.MarketStatus;
 
-public class MarketStatusInputBoundary {
+public interface MarketStatusInputBoundary {
+    void execute(MarketStatusRequestModel requestModel);
 }
