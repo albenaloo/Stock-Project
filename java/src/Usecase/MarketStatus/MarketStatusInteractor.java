@@ -13,15 +13,9 @@ public class MarketStatusInteractor implements MarketStatusInputBoundary{
     }
 
     @Override
-    public void execute(MarketStatusRequestModel requestModel) {
-        String exchange = requestModel.getExchange();
-        if (exchange == null || exchange.isBlank()) {
-            // default to US if nothing provided
-            exchange = "US";
-        }
-
+    public void execute() {
         try {
-            MarketStatus status = dataAccess.loadStatus(exchange);
+            MarketStatus status = dataAccess.loadStatus();
 
             if (status == null) {
                 presenter.prepareFailView("No market status available.");
